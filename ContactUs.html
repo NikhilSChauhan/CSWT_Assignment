@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style
+    type="text/css">
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #86377b 20%, #27273c 80%);
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+        .form-style-9{
+            max-width: 1000px;
+            background: #FAFAFA;
+            height: 399px;
+            padding: 50px;
+            margin: 50px auto;
+            box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+            border-radius: 10px;
+            border: 6px solid #305A72;
+        }
+        .form-style-9 ul{
+            padding:0;
+            margin:0;
+            list-style:none;
+        }
+        .form-style-9 ul li{
+            display: block;
+            margin-bottom: 10px;
+            min-height: 69px;
+        }
+        .form-style-9 ul li  .field-style{
+            box-sizing: border-box; 
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box; 
+            padding: 8px;
+            outline: none;
+            border: 1px solid #B0CFE0;
+            -webkit-transition: all 0.30s ease-in-out;
+            -moz-transition: all 0.30s ease-in-out;
+            -ms-transition: all 0.30s ease-in-out;
+            -o-transition: all 0.30s ease-in-out;
+        
+        }.form-style-9 ul li  .field-style:focus{
+            box-shadow: 0 0 5px #B0CFE0;
+            border:1px solid #B0CFE0;
+        }
+        .form-style-9 ul li .field-split{
+            width: 49%;
+        }
+        .form-style-9 ul li .field-full{
+            width: 100%;
+        }
+        .form-style-9 ul li input.align-left{
+            float:left;
+        }
+        .form-style-9 ul li input.align-right{
+            float:right;
+        }
+        .form-style-9 ul li textarea{
+            width: 100%;
+            height: 100px;
+        }
+        .form-style-9 ul li input[type="button"], 
+        .form-style-9 ul li input[type="submit"] {
+            -moz-box-shadow: inset 0px 1px 0px 0px #3985B1;
+            -webkit-box-shadow: inset 0px 1px 0px 0px #3985B1;
+            box-shadow: inset 0px 1px 0px 0px #3985B1;
+            background-color: #216288;
+            border: 1px solid #17445E;
+            display: inline-block;
+            cursor: pointer;
+            color: #FFFFFF;
+            padding: 8px 18px;
+            text-decoration: none;
+            font: 12px Arial, Helvetica, sans-serif;
+        }
+        .form-style-9 ul li input[type="button"]:hover, 
+        .form-style-9 ul li input[type="submit"]:hover {
+            background: linear-gradient(to bottom, #2D77A2 5%, #337DA8 100%);
+            background-color: #28739E;
+        }
+        a {
+        display: inline;
+        color: rgb(255, 255, 255);
+        background-color: rgb(1, 50, 105);
+        text-align: center;
+        padding: 14px 20px;
+        text-decoration: none;
+}
+    .home{max-width: 200px; margin: 0 auto;}
+        </style>
+</head>
+
+<body>
+
+    <h2 style="color: antiquewhite; text-align: center; font: Arial, Helvetica, sans-serif;"><u>Contact Us</u></h2>
+    
+    <div class="waveWrapper waveAnimation" style="z-index: -1;">
+        <div class="waveWrapperInner bgTop">
+          <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgMiddle">
+          <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+        </div>
+        <div class="waveWrapperInner bgBottom">
+          <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+        </div>
+      </div>
+ <form class="form-style-9">
+<ul>
+<li>
+    <input type="text" name="field1" class="field-style field-split align-left" placeholder="Name" />
+    <input type="email" name="field2" class="field-style field-split align-right" placeholder="Email" />
+
+</li>
+<li>
+    <input type="text" name="field3" class="field-style field-split align-left" placeholder="Phone" />
+    <input type="url" name="field4" class="field-style field-split align-right" placeholder="Website (optional)" />
+</li>
+<li>
+<input type="text" name="field3" class="field-style field-full align-none" placeholder="Subject" />
+</li>
+<li>
+<textarea name="field5" class="field-style" placeholder="What more do you want to know ?"></textarea>
+</li>
+<li>
+<input type="submit" value="Send Message" />
+</li>
+</ul>
+</form>
+<div class="home"><a href="Login.html">Back To Login </a></div>   
+</body>
+</html>

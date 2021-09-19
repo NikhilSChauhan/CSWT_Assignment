@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Computer Essentials</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+.header h1 {
+  font-size: 40px;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a.right {
+  float: right;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.main {   
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 id="demo"><u>Computer Essentials</u></h1>
+  <p>By Rajveer Singh Sando<br>Nikhil Singh Chauhan<br>Surya Nandan Panwar</p>
+</div>
+
+<div class="navbar">
+  <a href="Processors.html">Processors</a>
+  <a href="GPU.html">Graphic Cards</a>
+  <a href="RAM.html">RAM</a>
+  <a href="motherboard.html">Motherboard</a>
+  <a href="Login.html" class="right">Sign Out</a>
+  <a href="ContactUs.html" class="right">Contact Us</a>
+  <a href="Calc.html">Calculator</a>
+  
+</div>
+
+  <div class="main">
+    <h2>Ryzen 5950x & Ryzen 5900x</h2>
+    <h5>The Overkill Duo</h5>
+   <img src="https://www.amd.com/system/files/2020-09/616656-amd-ryzen-9-5000-series-PIB-1260x709_0.png" alt="/////" width="600px">
+
+    <p style="font: 20px Arial, Helvetica, sans-serif;" >With the Ryzen 5000 series, it's fair to say that AMD has finally, and fully, eclipsed Intel's performance 
+        dominance in desktop PCs. AMD’s flagship $799 Ryzen 9 5950X has landed in our labs, boasting 16 cores and 32 threads bristling with the potent new Zen 3 
+        microarchitecture.AMD’s new halo part expands Ryzen 9’s dominating lead in productivity applications and beats Intel’s competing processors in every other metric, 
+        including 1080p gaming performance, by surprising margins. Our 5950X sample even breaks the 5 GHz barrier at stock settings (at least sporadically), 
+        outstripping its spec and making it an easy choice for our list of Best CPUs, all while radically altering our CPU Benchmarks Hierarchy.  
+    But the Ryzen 9 5950X is just the tip of the Zen 3 spear. We also have the more amenable $549 Ryzen 9 5900X that comes with 12 cores and 24 threads.
+     Aside from its bruising performance in applications, it’s even faster than the 5950X in gaming, even beating out Intel's overclocked flagships at 1080p, too. </p>
+
+    <a href="https://www.amazon.com/Best-Sellers-Computers-Accessories-Computer-CPU-Processors/zgbs/pc/229189">Some best selling processors.</a>
+    <br>
+    <h2>Nvidia RTX 3090</h2>
+    <h5>The Godfather</h5>
+    <img src="https://cdn.wccftech.com/wp-content/uploads/2020/10/Ampere-3090_3QTR_Back_Left-Custom.png" alt="/////" width="600px">
+    
+    <p style="font: 20px Arial, Helvetica, sans-serif;">If any GPU could be considered to rule the roost, it would be the Nvidia GeForce RTX 3090. 
+        The company’s flagship can handle hardcore gaming and 3D rendering thanks to the 24GB of GDDR6X RAM tucked behind that huge heatsink. 
+        So, even with the newest AAA games, it delivers amazing 4K performance and can even handle 8K gaming at 60fps, though it’s not quite perfect at that level. 
+        It’s no wonder Nvidia replaced the two highest performing graphics cards of the previous generation, the Nvidia Titan RTX and the RTX 2080 Ti, 
+        with the Nvidia GeForce RTX 3090. Those GPUs might have set a high bar to meet, but the 3090 is quite the powerhouse and is more than capable.</p>
+
+    <a href="https://www.amazon.com/Best-Sellers-Computers-Accessories-Computer-Graphics-Cards/zgbs/pc/284822">Some best selling Graphic Cards.</a>
+  </div>
+</div>
+</body>
+<script> document.getElementById("demo").addEventListener("mouseover", mouseOver);
+  document.getElementById("demo").addEventListener("mouseout", mouseOut);
+  
+  function mouseOver() {
+    document.getElementById("demo").style.color = "yellow";
+  }
+  
+  function mouseOut() {
+    document.getElementById("demo").style.color = "white";
+  }</script>
+</html>

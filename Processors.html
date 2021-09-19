@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intel VS RYZEN</title>
+<style>    
+
+@keyframes move_wave {
+    0% {
+        transform: translateX(0) translateZ(0) scaleY(1)
+    }
+    50% {
+        transform: translateX(-25%) translateZ(0) scaleY(0.55)
+    }
+    100% {
+        transform: translateX(-50%) translateZ(0) scaleY(1)
+    }
+}
+.waveWrapper {
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    margin: auto;
+}
+.waveWrapperInner {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    height: 100%;
+    bottom: -1px;
+    background-image: linear-gradient(to top, #5768c7 20%, #34263f 80%);
+}
+.bgTop {
+    z-index: 15;
+    opacity: 0.5;
+}
+.bgMiddle {
+    z-index: 10;
+    opacity: 0.75;
+}
+.bgBottom {
+    z-index: 5;
+}
+.wave {
+    position: absolute;
+    left: 0;
+    width: 200%;
+    height: 100%;
+    background-repeat: repeat no-repeat;
+    background-position: 0 bottom;
+    transform-origin: center bottom;
+}
+.waveTop {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveTop {
+  animation: move-wave 3s;
+   -webkit-animation: move-wave 3s;
+   -webkit-animation-delay: 1s;
+   animation-delay: 1s;
+}
+.waveMiddle {
+    background-size: 50% 120px;
+}
+.waveAnimation .waveMiddle {
+    animation: move_wave 10s linear infinite;
+}
+.waveBottom {
+    background-size: 50% 100px;
+}
+.waveAnimation .waveBottom {
+    animation: move_wave 15s linear infinite;
+}
+
+ a {
+    display: inline;
+    color: rgb(255, 255, 255);
+    background-color: rgb(1, 50, 105);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    }
+.home{max-width: 200px; margin: 0 auto; margin-top: 10;}
+
+</style>
+</head>
+
+<body>
+
+    <h2 style="color: antiquewhite; text-align: center; font: Arial, Helvetica, sans-serif;">Most popular Processors</h2>
+
+        <div class="waveWrapper waveAnimation" style="z-index: -1;">
+            <div class="waveWrapperInner bgTop">
+              <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgMiddle">
+              <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+            </div>
+            <div class="waveWrapperInner bgBottom">
+              <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+            </div>
+          </div>
+
+    <table style="border-color: rgb(3, 3, 87);color: antiquewhite;  margin-left: auto; margin-right: auto; margin-bottom: 30px ;" border="10" cellspacing="3" cellpadding="7">
+	<tbody>
+		<tr>
+			<td>
+				<p><strong>Intel CPU</strong></p>
+			</td>
+			<td>
+				<p><strong>Cores / Threads</strong></p>
+			</td>
+			<td>
+				<p><strong>Clocks (Max)</strong></p>
+			</td>
+			<td>&nbsp;</td>
+			<td>
+				<p><strong>Clocks (Max)</strong></p>
+			</td>
+			<td>
+				<p><strong>Cores / Threads</strong></p>
+			</td>
+			<td>
+				<p><strong>AMD CPU</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p><strong>N/A</strong></p>
+			</td>
+			<td>
+				<p>N/A</p>
+			</td>
+			<td>
+				<p>N/A</p>
+			</td>
+			<td>&nbsp;</td>
+			<td>
+				<p>4.7 GHz (105W)</p>
+			</td>
+			<td>
+				<p>16/32</p>
+			</td>
+			<td>
+				<p><strong>AMD Ryzen 9 3950X</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p><strong>Intel Core i9-10900K</strong></p>
+			</td>
+			<td>
+				<p>10/20</p>
+			</td>
+			<td>
+				<p>5.3 GHz (125W)</p>
+			</td>
+			<td>&nbsp;</td>
+			<td>
+				<p>4.6 GHz (105W)</p>
+			</td>
+			<td>
+				<p>12/24</p>
+			</td>
+			<td>
+				<p><strong>AMD Ryzen 9 3900X</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p><strong>Intel Core i9-10850K</strong></p>
+			</td>
+			<td>
+				<p>10/20</p>
+			</td>
+			<td>
+				<p>5.2 GHz (125W)</p>
+			</td>
+			<td>&nbsp;</td>
+			<td>
+				<p>4.6 GHz (105W)</p>
+			</td>
+			<td>
+				<p>12/24</p>
+			</td>
+			<td>
+				<p><strong>AMD Ryzen 9 3900X</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p><strong>Intel Core i7-10700K</strong></p>
+			</td>
+			<td>
+				<p>8/16</p>
+			</td>
+			<td>
+				<p>5.1 GHz (125W)</p>
+			</td>
+			<td>&nbsp;</td>
+			<td>
+				<p>4.5 GHz (105W)</p>
+			</td>
+			<td>
+				<p>8/16</p>
+			</td>
+			<td>
+				<p><strong>AMD Ryzen 7 3800X</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p><strong>Intel Core i7-10700</strong></p>
+			</td>
+			<td>
+				<p>8/16</p>
+			</td>
+			<td>
+				<p>4.8 GHz (65W)</p>
+			</td>
+			<td>&nbsp;</td>
+			<td>
+				<p>4.4 GHz (65W)</p>
+			</td>
+			<td>
+				<p>8/16</p>
+			</td>
+			<td>
+				<p><strong>AMD Ryzen 7 3700X</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p><strong>Intel Core i5-10600K</strong></p>
+			</td>
+			<td>
+				<p>6/12</p>
+			</td>
+			<td>
+				<p>4.8 GHz (125W)</p>
+			</td>
+			<td>&nbsp;</td>
+			<td>
+				<p>4.4 GHz (95W)</p>
+			</td>
+			<td>
+				<p>6/12</p>
+			</td>
+			<td>
+				<p><strong>AMD Ryzen 5 3600X</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p><strong>Intel Core i5-10500</strong></p>
+			</td>
+			<td>
+				<p>6/12</p>
+			</td>
+			<td>
+				<p>4.5 GHz (65W)</p>
+			</td>
+			<td>&nbsp;</td>
+			<td>
+				<p>4.2 GHz (65W)</p>
+			</td>
+			<td>
+				<p>6/12</p>
+			</td>
+			<td>
+				<p><strong>AMD Ryzen 5 3600</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p><strong>Intel Core i5-10400</strong></p>
+			</td>
+			<td>
+				<p>6/12</p>
+			</td>
+			<td>
+				<p>4.3 GHz (65W)</p>
+			</td>
+			<td>&nbsp;</td>
+			<td>
+				<p>4.1 GHz (65W)</p>
+			</td>
+			<td>
+				<p>6/6</p>
+			</td>
+			<td>
+				<p><strong>AMD Ryzen 5 3500X</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p><strong>Intel Core i3-10300</strong></p>
+			</td>
+			<td>
+				<p>4/8</p>
+			</td>
+			<td>
+				<p>4.4 GHz (65W)</p>
+			</td>
+			<td>&nbsp;</td>
+			<td>
+				<p>4.3 GHz (65W)</p>
+			</td>
+			<td>
+				<p>4/8</p>
+			</td>
+			<td>
+				<p><strong>AMD Ryzen 3 3300X</strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<p><strong>Intel Core i3-10100</strong></p>
+			</td>
+			<td>
+				<p>4/8</p>
+			</td>
+			<td>
+				<p>4.3 GHz (65W)</p>
+			</td>
+			<td>&nbsp;</td>
+			<td>
+				<p>3.9 GHz (65W)</p>
+			</td>
+			<td>
+				<p>4/8</p>
+			</td>
+			<td>
+				<p><strong>AMD Ryzen 3 3100</strong></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div class="home"><a href="main.html">Back to Home </a></div>   
+</body>
+</html>

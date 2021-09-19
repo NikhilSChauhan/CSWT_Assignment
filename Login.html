@@ -1,0 +1,43 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+    <link rel="stylesheet" type="text/css" href="loginform.css">    
+</head>    
+<body>    
+    <h2 id="demo"><u>Login Page</u></h2><br>    
+    <div class="login">    
+    <form id="login" method="get" action="login.php">    
+        <label><b>Email <br> 
+        </b>    
+        </label>    
+        <input type="text" name="Uname" id="Uname" placeholder="Username">    
+        <br><br>    
+        <label><b id="demo1">Password     
+        </b>    
+        </label>    
+        <input type="Password" name="Pass" id="Pass" placeholder="Password">    
+        <br><br>    
+        <input type="button" onclick="location.href='main.html';" value="Log In" />
+        <input type="button" onclick="location.href='SignUp.html';" value="Sign Up" />
+        <br><br>    
+        <input type="checkbox" id="check">    
+        <span>Remember me</span>    
+        <br><br>      
+    </form>     
+</div>
+</body>
+<script>
+    document.getElementById("demo").addEventListener("mouseover", mouseOver);
+    document.getElementById("demo").addEventListener("mouseout", mouseOut);
+    
+    function mouseOver() {
+      document.getElementById("demo").style.color = "yellow";
+    }
+    
+    function mouseOut() {
+      document.getElementById("demo").style.color = "white";
+    }
+    
+    </script>    
+</html>     
